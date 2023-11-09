@@ -15,7 +15,9 @@
 					placeholder="Ex: arafatiqbal"
 					class="input input-bordered input-lg w-full max-w-xs mb-5"
 				/>
-				<button type="submit" class="btn btn-primary">Get Started</button>
+				<button data-sveltekit-preload-data type="submit" class="btn btn-primary"
+					>Get Started</button
+				>
 			</div>
 		</div>
 	</div>
