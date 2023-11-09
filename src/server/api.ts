@@ -16,3 +16,19 @@ export async function getReadme(username: string) {
 	const readmeText: string = await response.text();
 	return readmeText;
 }
+
+export async function getProfileData(username: string) {
+	const response = await fetch(`https://api.github.com/users/${username}`, {
+		headers: {
+			Authorization: 'Bearer ' + GITHUB_TOKEN,
+			Accept: 'application/vnd.github.raw'
+		}
+	});
+
+	if (!response.ok) {
+		throw error(404, { message: 'Profile does not exist' });
+	}
+
+	const userData = await response.json();
+	return userData;
+}
