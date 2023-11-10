@@ -5,13 +5,14 @@
 		var themeToggleDarkIcon = document.getElementById('dark-icon');
 		var themeToggleLightIcon = document.getElementById('light-icon');
 		var themeToggleBtn = document.getElementById('theme-toggle');
+		let darkMode = 'dracula';
 		if (themeToggleDarkIcon && themeToggleLightIcon && themeToggleBtn) {
 			if (
 				localStorage.getItem('color-theme') === 'dark' ||
 				(!('color-theme' in localStorage) &&
 					window.matchMedia('(prefers-color-scheme: dark)').matches)
 			) {
-				document.documentElement.setAttribute('data-theme', 'dark');
+				document.documentElement.setAttribute('data-theme', darkMode);
 			} else {
 				document.documentElement.setAttribute('data-theme', 'cookie');
 			}
@@ -22,7 +23,7 @@
 					// if set via local storage previously
 					if (localStorage.getItem('color-theme')) {
 						if (localStorage.getItem('color-theme') === 'light') {
-							document.documentElement.setAttribute('data-theme', 'dark');
+							document.documentElement.setAttribute('data-theme', darkMode);
 							localStorage.setItem('color-theme', 'dark');
 						} else {
 							document.documentElement.setAttribute('data-theme', 'cookie');
@@ -34,7 +35,7 @@
 							document.documentElement.setAttribute('data-theme', 'cookie');
 							localStorage.setItem('color-theme', 'light');
 						} else {
-							document.documentElement.setAttribute('data-theme', 'dark');
+							document.documentElement.setAttribute('data-theme', darkMode);
 							localStorage.setItem('color-theme', 'dark');
 						}
 					}
