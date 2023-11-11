@@ -28,7 +28,7 @@
 				class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
 			>
 				<li><a href="/">Home</a></li>
-				<li><a href="/instructions">Instructions</a></li>
+				<li><a href="/">Contact</a></li>
 			</ul>
 		</div>
 	</div>
