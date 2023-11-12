@@ -45,7 +45,7 @@
 	});
 </script>
 
-<label class="swap swap-rotate absolute right-0 p-2 mr-5">
+<label class="swap swap-rotate absolute right-0 p-2 mr-5 btn-ghost btn-circle">
 	<!-- this hidden checkbox controls the state -->
 	<input type="checkbox" id="theme-toggle" />
 	<!-- sun icon -->

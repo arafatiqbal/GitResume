@@ -5,7 +5,7 @@
 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 <!-- svelte-ignore a11y-label-has-associated-control -->
 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-<div class="navbar bg-base-100">
+<div class="navbar bg-base-200">
 	<div class="navbar-start">
 		<div class="dropdown">
 			<label tabindex="0" class="btn btn-ghost btn-circle">
