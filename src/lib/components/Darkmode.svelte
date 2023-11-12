@@ -47,7 +47,8 @@
 
 <label class="swap swap-rotate absolute right-0 p-2 mr-5 btn-ghost btn-circle">
 	<!-- this hidden checkbox controls the state -->
-	<input type="checkbox" id="theme-toggle" />
+
+	<input type="checkbox" id="theme-toggle" class="tooltip tooltip-left" data-tip="Dark or Light" />
 	<!-- sun icon -->
 	<svg
 		class="swap-on light-icon fill-current w-6 h-6"
