@@ -7,7 +7,7 @@
 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 <div class="navbar bg-base-200">
 	<div class="navbar-start">
-		<div class="dropdown">
+		<div class="dropdown tooltip tooltip-right" data-tip="Menu">
 			<label tabindex="0" class="btn btn-ghost btn-circle">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="navbar-center">
+	<div class="navbar-center tooltip tooltip-bottom" data-tip="Home">
 		<a href="/" class="btn btn-ghost normal-case text-xl">gitPortfolio</a>
 	</div>
 	<div class="navbar-end">
